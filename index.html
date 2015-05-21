@@ -1,0 +1,20 @@
+
+<div  ng-app="app" ng-controller="main">
+	
+	<ul ng-show="context.opts !== null">
+		<li ng-repeat="o in context.opts" ng-click="go(o.go,o.vt)">
+			{{o.l}}
+		</li>
+	</ul>
+
+	<div>
+		<ng-include src="tpl()"></ng-include> 
+	</div>
+
+
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+<script type="text/javascript" src="zest_satisfy.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+
